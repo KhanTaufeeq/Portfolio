@@ -1,0 +1,345 @@
+body {
+  font-family: cursive;
+  background-color: black;
+}
+nav #name-logo {
+  text-decoration: none;
+}
+nav #name-logo h1 {
+  color: purple;
+}
+nav #name-logo h1:hover {
+  color: white;
+}
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;
+}
+nav .right-nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .right-nav a {
+  text-decoration: none;
+  color: purple;
+  font-size: larger;
+}
+nav a:hover {
+  color: white;
+  transform: scale(1.2);
+}
+nav .toogle-div {
+  display: none;
+}
+
+/* nav media screen  */
+
+@media only screen and (max-width: 1280px) {
+  nav .right-nav{
+    display: none;
+  }
+  nav .toogle-div{
+    display: block;
+    width: 5%;
+  }
+  nav .toogle-div img{
+    width: 100%;
+  }
+  nav #name-logo h1{
+    font-size: xx-large;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  nav .right-nav {
+    display: none;
+  }
+
+  nav .toogle-div {
+    display: block;
+    width: 10%;
+  }
+
+  nav .toogle-div img {
+    width: 100%;
+  }
+  nav #name-logo h1 {
+    font-size: 6vw;
+  }
+}
+/* main  */
+.main-div .img-div {
+  width: 40%;
+}
+.main-div .img-div img {
+  width: 100%;
+}
+.main-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  margin: 3vw auto;
+  /* border-radius: 10px; */
+  text-align: center;
+}
+.main-div h1 {
+  color: white;
+  font-size: 3vw;
+  margin-bottom: 0;
+}
+.main-div p {
+  color: white;
+  font-size: 2vw;
+  margin-top: 0;
+  font-style: italic;
+}
+/* .main-div h2:active {
+    transform: scale(2);
+    transition: transform 3s;
+    z-index: 0;
+} */
+.main-div h2 {
+  color: white;
+  font-size: 2vw;
+}
+.main-div span {
+  color: purple;
+}
+.main-div #last-name {
+  color: yellow;
+}
+.main-div .profile-pic-div {
+  flex-basis: 30%;
+}
+.main-div .profile-pic-div img {
+  width: 100%;
+  border: 5px solid purple;
+  border-radius: 50px;
+}
+.main-div .right-main-div {
+  flex-basis: 52%;
+}
+.main-div .right-main-div .resume-div {
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+}
+.main-div .right-main-div .resume-div a {
+  width: 20%;
+  background-color: purple;
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.main-div .right-main-div .resume-div a:hover {
+  transform: scale(1.2);
+}
+
+/* projects */
+nav .right-project-nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+/* nav .right-project-nav a{
+    color: purple;
+    text-decoration: none;
+    font-size: larger;
+} */
+/* nav .right-project-nav a:hover{
+    color: white;
+    transition: 2s;
+} */
+main .project-heading {
+  color: purple;
+  margin: 0 auto;
+  width: 70%;
+  margin: 100px auto 40px auto;
+  font-size: xx-large;
+}
+/* main #closed-bracket{
+    margin: 0 auto;
+} */
+main #project-section .projects .project-div {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 10%; */
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  box-shadow: 1px 2px 12px 3px purple;
+  margin-bottom: 4vw;
+}
+main #project-section .projects .project-div .project-vid {
+  flex-basis: 50%;
+  /* border: 1px solid purple;
+    border-radius: 5px; */
+}
+main #project-section .projects .project-div .project-vid video {
+  width: 100%;
+  /* border: 1px solid purple; */
+}
+main #project-section .projects .project-div .project-info {
+  color: white;
+  flex-basis: 40%;
+}
+main #project-section .projects .project-div .project-info h2 {
+  font-size: xx-large;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main #project-section .projects .project-div .project-info .tools-icons div {
+  display: flex;
+  justify-content: space-between;
+}
+main #project-section .projects .project-div .project-info .tools-icons img {
+  width: 10%;
+}
+main #project-section .projects .project-div .project-vid .link-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+main #project-section .projects .project-div .project-vid .link-icons button {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  width: 6vw;
+  border-radius: 5px;
+  font-family: cursive;
+  /* font-size: large; */
+  cursor: pointer;
+}
+main
+  #project-section
+  .projects
+  .project-div
+  .project-vid
+  .link-icons
+  button:hover {
+  transform: scale(1.2);
+}
+main #skills {
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  font-size: x-large;
+  margin-top: 20px;
+}
+main #skills-section h2 {
+  color: purple;
+  width: 70%;
+  margin: 0 auto;
+  font-size: xx-large;
+}
+
+@media only screen and (max-width: 1280px){
+  .main-div .right-main-div .resume-div a {
+    width: 23%;
+    padding: 0.6rem;
+  } 
+}
+
+
+@media only screen and (max-width: 650px) {
+    main .main-div {
+        flex-direction: column;
+    }
+
+    .main-div .profile-pic-div img {
+        width: 70%;
+    }
+
+    .main-div h1 {
+        font-size: 6vw;
+    }
+
+    .main-div h2 {
+        font-size: 5vw;
+    }
+
+    .main-div p {
+        font-size: 4vw;
+    }
+
+    .main-div .right-main-div .resume-div a {
+        width: 40%;
+    }
+    main #project-section .projects .project-div .project-vid .link-icons button {
+        width: 20vw;
+    }
+    main #project-section .projects .project-div {
+      flex-direction: column;
+      margin-bottom: 10vw;
+    }
+    main .project-heading {
+      margin: 60px auto 30px auto;
+    }
+    main #skills-section {
+      margin-bottom : 6vw;
+    }
+    main #skills-section h3{
+      font-size: larger;
+    }
+}
+
+/* footer  */
+
+footer .contact-div img {
+  width: 30%;
+}
+footer .contact-div .contact-links a {
+  text-decoration: none;
+}
+footer .contact-div {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  gap: 3%;
+  justify-content: right;
+  align-items: center;
+  border-top: 1px solid purple;
+  padding-top: 1em;
+}
+footer .contact-div .contact-links {
+  width: 10%;
+}
+footer .contact-div h4 {
+  color: white;
+  margin: 0;
+}
+
+/* footer  */
+
+@media only screen and (max-width: 1280px) {
+  footer .contact-div{
+    width: 76%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  footer .contact-div .contact-links{
+    width: 50%;
+  } 
+  footer .contact-div {
+    width: 79%;
+  } 
+  footer .contact-div img {
+    width: 29%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .main-div .right-main-div .resume-div a {
+      width: 52%;
+  }
+}
+
