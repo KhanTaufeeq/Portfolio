@@ -8,8 +8,10 @@ let x = 0;
 
 toggle.addEventListener('click', () => {
     if (x === 0) {
-        nav.style.display = 'block';
-        // toggle.style.display = 'none';
+        nav.style.display = 'block'; 
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column'; 
+        // nav.style.width = "40%";
         x = 1;
     } 
     else if (x === 1) {
